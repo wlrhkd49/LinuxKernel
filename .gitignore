@@ -1,0 +1,72 @@
+.*
+*.o
+*.o.*
+*.a
+*.s
+*.ko
+*.so
+*.so.dbg
+*.mod.c
+*.i
+*.lst
+*.sysmtypes
+*.order
+modules.builtin
+*.elf
+*.bin
+*.lzma
+*.xz
+*.lzo
+*.patch
+*.gcno
+
+#
+# Top-level generic files
+#
+/tags
+/TAGS
+/linux
+/vmlinux
+/System.map
+/Module.markers
+/Module.symvers
+
+#
+# Debian directory (make deb-pkg)
+#
+/debian/
+
+#
+# git files that we don't want to ignore even it they are dot-files
+#
+!.gitignore
+!.mailmap
+
+#
+# Generated include files
+#
+include/config
+include/linux/version.h
+include/generated
+arch/*/include/generated
+
+# stgit generated dirs
+paches-*
+
+# quilt's files
+patches
+series
+
+#cscope files
+cscope.*
+ncscope.*
+
+# gnu global files
+GPATH
+GRTAGS
+GSYMS
+GTAGS
+
+*.orig
+*~
+\#*#
